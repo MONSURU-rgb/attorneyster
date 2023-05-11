@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../team/output.css">
+    <link rel="stylesheet" href="../dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Script&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Script&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Attorneyster Homepage</title>
+</head>
+<body class="max-w-[1500px]" style="overflow-x: hidden;">
+    <!-- HEAD SECTION -->
+  <section class="first-section w-[73%] mx-[auto]">
+    
+    <!-- FIRST NAV SECTION -->
+       <div class="mx-[auto] header-div section-1" style="z-index: 100 !important; position: relative !important;">
+            <nav class="flex justify-between items-center logo-1">
+                <div class="right-hand-logo">
+                    <img src="../images/Logo Icon.png" alt="Icon" class="logo-image"/>
+                    <h2 class="font-caramount font-semibold text-white">Attorneyster</h2>
+                </div>
+                <div class="right-side-header">
+                    <div class="right-side-header-div">
+                        <img src="../images/Cart-Icon.png" class="" alt="">
+                        <p class="cart">Cart (0)</p>
+                    </div>
+                    <button class="consult-button"><a href="../src/pricing.html">Book a Consultation</a></button>
+
+                </div>
+            </nav>
+
+            <nav class="logo-2" style="display:flex; justify-content: space-between; padding-bottom: clamp(12px,1.5vw,24px);">
+                <div class="hamburger-icon">
+                    <span class="line"></span>
+                </div>
+
+                <ul class="nav-list list">
+                    <li><a href="../src/index.html">Home</a></li>
+                    <li><a href="../src/about.html">About Us</a></li>
+                    
+                    <ul class="footer-unordered-list-1" style="z-index: 200;">
+                        <li><a href="/src/index.html">Home</a></li>
+                        <li><a href="/src/about.html"> About Us</a></li>
+                        <li><a href="../src/blog-page.html">Blog</a></li>
+                        <li><a href="../src/blog-single.html">Blog Post</a></li>
+                        <li><a href="/src/contact.html">Contact Us</a></li>
+                    </ul>
+
+                    <li style="position: relative;" class="page-and-drop-down">
+                        <a href=""  class="pages">Pages
+                        <img src="../images/drop-down-icon.png" alt="">
+                        </a>
+
+                        <div style="position: absolute; clip-path: polygon(50% 0, 100% 100%, 0 100%); z-index: 2; width: 20px; height: 20px; transform: translateY(0%); background-color: #D1B06B;" class="dropdown-menu"></div>
+
+                        <div class="dropdown-menu" style="position: absolute; z-index: 1;left: -50%; top: 140%;">
+                            <ul style="width: 150px; list-style-type: none; vertical-align: middle; background-color: #D1B06B; display: flex; gap: 30px; flex-direction: column; color: #fff; justify-content: center; align-items: center; gap: clamp(8px,0.6vw,10px); padding-block: clamp(10px,0.9vw,14px); position: relative;">
+
+
+                                <li style="list-style-type: none;" style="margin: 0;">
+                                    <a href="../src/practice-areas.html" style="text-decoration: none"><span style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px"> Practice Areas</span></a>
+                                </li>
+                                <li style="margin: 0;">
+                                    <a href="../src/blog-page.html" style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Blog</span></a>
+                                </li>
+                                <li style="margin: 0;">
+                                    <a href="../src/blog-single.html" aria-current="page" style="text-decoration: none"><span style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Blog Single</span></a>
+                                </li>
+                                <li style="margin: 0;">
+                                    <a href="../src/cases.html" style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Successful Cases</span></a>
+                                </li>
+
+                                <li style="margin: 0;">
+                                    <a href="../src/testimonial.html" style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Testimonial</span></a>
+                                </li>
+
+                                <li style="margin: 0;">
+                                    <a href="../src/business-law.html" style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Business Law</span></a>
+                                </li>
+            
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../src/contact.html">Contact Us</a></li>
+                </ul>
+
+                <div style="display: flex; gap: clamp(22px,2.3vw,34.5px)">
+                    <div style="display: flex; gap: clamp(3px,0.5vw,8px);">
+                        <div class="tel-icon">
+                            <img src="../images/telephone.png" alt="" style="width: clamp(5px,0.8vw,13px); text-align: center; height: clamp(5px,0.8vw,13px)">
+                        </div>
+
+                        <div>
+                            <h4 style="font-family: 'Outfit'; font-size: clamp(10px,0.9vw,14px); color: #CCAA60">Call us on</h4>
+                            <p style="font-family: Outfit; font-size: clamp(13px,1vw,16.5px); color: white">911-987654321</p>
+                        </div>
+                    </div>
+
+                    <div class="email-message">
+                        <div class="tel-icon">
+                            <img src="../images/email.png" alt="" style="width: clamp(5px,0.8vw,13px); text-align: center; height: clamp(5px,0.8vw,13px)">
+                        </div>
+
+                        <div>
+                            <h4 style="font-family: Outfit; font-size: clamp(10px,0.9vw,14px); color: #CCAA60">Email us:</h4>
+                            <p style="font-family: Outfit; font-size: clamp(13px,1vw,16.5px); color: white">yourmail@mail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+       </div>
+
+       <div class="second-layer" style="display: flex;">
+            <div style="display: flex; flex-direction: column; gap: clamp(5px,0.6px,9.8px); justify-content: flex-start; align-items: flex-start; padding-bottom: clamp(60px,12vw,180px); padding-top: clamp(50px,9.3vw,150px);">
+                <img src="../images/star-icon.png" alt="" style="width: clamp(54px,4.5vw,71px); height: clamp(24px,2.1vw,33px);">
+                <h2 style="max-width: clamp(300px,27vw,437px); font-family: Cormorant-Garamond; font-size: clamp(30px,3.1px,48.8px); color: white">Deeper Understanding Better Solutions</h2>
+                <p style="max-width: clamp(230px,36vw,425px); font-family: 'Outfit'; color:#CCAA60; font-size: clamp(12px,1.1vw,16px); padding-bottom: clamp(4px,0.8vw,10px);">It is a long established fact that a reader will be  distracted by the readable content of a looking at its layout.</p>
+                <button style="font-family: Outfit; color:  #1F2732; font-size: clamp(12px,1.1vw,16.5px); padding-block: clamp(14px,1.3vw,21px); padding-inline: clamp(40px,4vw,64px); background-color: #D1B06B; font-weight: 500;"><a href="../src/contact.html">Get In Touch</a></button>
+            </div>
+
+            <!-- <div style="width: clamp(650px,58vw,916px); background-image: url(../images/First-man-photo.png); background-position: 80% 100%;
+            background-size: cover;
+            background-repeat: no-repeat;" class="image-of-a-man">
+
+            </div> -->
+
+            <!-- <div class="image-of-a-man"> -->
+                <img src="../images/First-man-photo.png" alt="" style="width: 70%;" class="image-of-a-man">
+           <!-- </div>     -->
+       </div>
+   </section>
+
+   <!-- SECOND SECTION -->
+
+   <section style="padding-block: clamp(79px,7.3vw,116px); background-color: #1F2732;">
+
+    <div class="section-2">
+        <div style="display: flex; flex-direction: column; gap: clamp(18px,1.6vw,29px); flex-basis: 50%;" class="two-images">
+            <img src="../images/section-2-image-1.png" alt="">
+            <img src="../images/section-2-image-2.jpg" alt="">
+        </div>
+
+        <div class="second-section-content">
+            <div style="display: flex; flex-direction: column; gap: clamp(4px,0.5vw,7px); padding-bottom: clamp(24px,2.3vw,36px);">
+                <h2 style="max-width: clamp(290px,33.3vw,308px); font-family: 'Cormorant Garamond'; font-size: clamp(28px,2.1vw,34px); font-weight: 600; color: white;">The Simple Choice for Complex Litigation</h2>
+                <img src="../images/star-icon.png" alt="" style="width: clamp(54px,4.5vw,71px); height: clamp(24px,2.1vw,33px);">
+            </div>
+            <p style="font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #D7D7D7; max-width: clamp(250px,60vw,680px); font-weight: 400;">There are many variations of passages of Lorem Ipsum available, but the majority have su alteration in some form, by injected humour, oir randomised workds which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>
+
+            <div style="padding-top: clamp(18px,1.5vw,23px); display: flex; align-items: center; gap: clamp(7px,0.8vw,12px); padding-bottom: clamp(28px,2vw,36px);">
+                <div style="width: clamp(45px,5vw,70px); height: clamp(45px,5vw,70px); border-radius: 50%; background-color: #161D27; display: flex; justify-content: center; align-items: center; clip-path: circle(42%);">
+                    <img src="../images/section-2-image-of-a-man.png" alt="" style="width: clamp(42px,4vw,62px);">
+                </div>
+
+                <p style="font-family: 
+                'Luxurious Script'; font-size: clamp(26px,2vw,32.3px); color: white;">Peeter Park</p>
+            </div>
+
+            <div style="display: flex; gap: clamp(20px,1.7vw,27px); flex-wrap: wrap;">
+                <div style="background-color:#3B434E; padding-block: clamp(16px,1.2vw,23px); padding-inline: clamp(24px,2.3vw,36px); display: flex; gap: clamp(7px,0.6vw,10px); justify-content: center;" class="case-success-button">
+                    <img src="../images/pencil-icon.png" alt="" style="width: clamp(30px,3vw,40px); height: clamp(30px,3vw,40px)">
+                    <div style="font-family: Outfit; font-size: clamp(12px,1vw,16px); color: #FFFFFF; display: flex; flex-direction: column; font-weight: 500;">
+                        <p>95%</p>
+                        <p style="margin-top: -5px; white-space: nowrap;">Case Success</p>
+                    </div>
+                </div>
+                <div style="background-color:#D1B06B; padding-block: clamp(16px,1vw,20px); padding-inline: clamp(24px,2.3vw,36px); display: flex; gap: clamp(7px,1vw,16px); justify-content: center;" class="case-success-button">
+                    <div style="width: clamp(40px,4vw,60px); padding-block: clamp(5px,0.3vw,6px); padding-inline: clamp(5px,0.8vw,12px); border-radius: 3px; font-family: 'Outfit'; font-size: clamp(14px,1.5vw,22.5px); font-weight: 600; color: white; background-color: #1F2732; display: flex; justify-content: center; align-items: center;">35+</div>
+                    <div style="font-family: 'Outfit'; font-size: clamp(12px,1vw,16px); color: #1F2732; display: flex; flex-direction: column; font-weight: 500;">
+                        <p>Years</p>
+                        <p style="margin-top: -5px; white-space: nowrap;">Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </section>
+
+   <!-- THIRD SECTION -->
+
+   <section style="padding-bottom: clamp(79px,7.3vw,116px); background-color: #161D27">
+
+        <div style="margin-inline: auto; padding-top: clamp(50px,7.5vw,120px);" class="section-3">
+
+            <div class="section-3-explore-part">
+                <div>
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 500; font-size: clamp(20px,2.1vw,33.8px); color: white; max-width: clamp(180px,17vw,270px);">Explore</h2>
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 500; font-size: clamp(20px,2.1vw,33.8px); color: white;"> Our Practice Areas</h2>
+                    <img src="../images/star-icon.png" alt="" style="width: clamp(54px,4.5vw,71px); height: clamp(24px,2.1vw,33px);">
+                </div>
+                <p style="max-width: clamp(200px,37vw,559px); font-size: clamp(13px,1vw,15px); font-family: 'Outfit'; color: #D7D7D7;">There are <span style="color: #D1B06B">many variations of passages</span> of Lorem Ipsum available, but the majority have su alteration in some form, by injected humour, oir  <span style="color: #D1B06B">randomised workds</span> which don't look even slightly believable.</p>
+            </div>
+
+            <div class="section-3-law-types">
+
+                <div style="padding-inline: clamp(16px,2.4vw,38px); padding-block: clamp(20px,2.7vw,43.5px); background-color: #1F2732; max-width: clamp(200px,24vw,350px);">
+                    <h2 style="color: white; font-weight: 600; font-size: clamp(16px,1.6vw,26px); font-family:'Cormorant Garamond'; padding-bottom: clamp(2px,0.4vw,5px); background-color: #1F2732;">Business Law</h2>
+                    <p style="font-family: Outfit; font-size: clamp(11px,1vw,15px); color: #D7D7D7; max-width: clamp(160px,18vw,259px); padding-bottom: clamp(16px,1.6vw,26px); border-bottom: 1px solid #3A4553;">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+
+                    <div style="padding-top: clamp(16px,1.7vw,28px); display: flex; justify-content: space-between; align-items: center;">
+                        <img src="../images/Section-3-icon-1.png" alt="" style="width: clamp(28px,2.6vw,41px); height: clamp(24px,2.2vw,36px);">
+                        <h3 style="background-color: #161D27; padding-block: clamp(7px,0.7vw,11px); padding-inline: clamp(18px,1.8vw,28.5px); color: white; font-family: 'Outfit'; font-size: clamp(12px,1vw,15px);"><a href="../src/business-law.html">Learn more</a></h3>
+
+                    </div>
+                </div>
+
+                <div style="padding-inline: clamp(16px,2.4vw,38px); padding-block: clamp(20px,2.7vw,43.5px); background-color: #1F2732; max-width: clamp(200px,24vw,350px);">
+                    <h2 style="color: white; font-weight: 600; font-size: clamp(16px,1.6vw,26px); font-family:'Cormorant Garamond'; padding-bottom: clamp(2px,0.4vw,5px); background-color: #1F2732;">Construction Law</h2>
+                    <p style="font-family: Outfit; font-size: clamp(11px,1vw,15px); color: #D7D7D7; max-width: clamp(160px,18vw,259px); padding-bottom: clamp(16px,1.6vw,26px); border-bottom: 1px solid #3A4553;">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+
+                    <div style="padding-top: clamp(16px,1.7vw,28px); display: flex; justify-content: space-between; align-items: center;">
+                        <img src="../images/Section-3-icon-2.png" alt="" style="width: clamp(28px,2.6vw,41px); height: clamp(24px,2.2vw,36px);">
+                        <h3 style="background-color: #161D27; padding-block: clamp(7px,0.7vw,11px); padding-inline: clamp(18px,1.8vw,28.5px); color: white; font-family: 'Outfit'; font-size: clamp(12px,1vw,15px);">Learn more</h3>
+
+                    </div>
+                </div>
+
+                <div style="padding-inline: clamp(16px,2.4vw,38px); padding-block: clamp(20px,2.7vw,43.5px); background-color: #1F2732; max-width: clamp(200px,24vw,350px);">
+                    <h2 style="color: white; font-weight: 600; font-size: clamp(16px,1.6vw,26px); font-family:'Cormorant Garamond'; padding-bottom: clamp(2px,0.4vw,5px); background-color: #1F2732;">Car Accident</h2>
+                    <p style="font-family: Outfit; font-size: clamp(11px,1vw,15px); color: #D7D7D7; max-width: clamp(160px,18vw,259px); padding-bottom: clamp(16px,1.6vw,26px); border-bottom: 1px solid #3A4553;">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+
+                    <div style="padding-top: clamp(16px,1.7vw,28px); display: flex; justify-content: space-between; align-items: center;">
+                        <img src="../images/Section-3-icon-3.png" alt="" style="width: clamp(28px,2.6vw,41px); height: clamp(24px,2.2vw,36px);">
+                        <h3 style="background-color: 
+                        #D1B06B; padding-block: clamp(7px,0.7vw,11px); padding-inline: clamp(18px,1.8vw,28.5px); color: white; font-family: 'Outfit'; font-size: clamp(12px,1vw,15px); color: #161D27;"><a href="../src/car-accident.html">Learn more</a></h3>
+
+                    </div>
+                </div>
+
+                <div style="padding-inline: clamp(16px,2.4vw,38px); padding-block: clamp(20px,2.7vw,43.5px); background-color: #1F2732; max-width: clamp(200px,24vw,350px);">
+                    <h2 style="color: white; font-weight: 600; font-size: clamp(16px,1.6vw,26px); font-family:'Cormorant Garamond'; padding-bottom: clamp(2px,0.4vw,5px); background-color: #1F2732;">Wrongful Death</h2>
+                    <p style="font-family: Outfit; font-size: clamp(11px,1vw,15px); color: #D7D7D7; max-width: clamp(160px,18vw,259px); padding-bottom: clamp(16px,1.6vw,26px); border-bottom: 1px solid #3A4553;">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+
+                    <div style="padding-top: clamp(16px,1.7vw,28px); display: flex; justify-content: space-between; align-items: center;">
+                        <img src="../images/Section-3-icon-4.png" alt="" style="width: clamp(28px,2.6vw,40px); height: clamp(24px,3.5vwvw,50px);">
+                        <h3 style="background-color: #161D27; padding-block: clamp(7px,0.7vw,11px); padding-inline: clamp(18px,1.8vw,28.5px); color: white; font-family: 'Outfit'; font-size: clamp(12px,1vw,15px);">Learn more</h3>
+
+                    </div>
+                </div>
+                <div style="padding-inline: clamp(16px,2.4vw,38px); padding-block: clamp(20px,2.7vw,43.5px); background-color: #1F2732; max-width: clamp(200px,24vw,350px);">
+                    <h2 style="color: white; font-weight: 600; font-size: clamp(16px,1.6vw,26px); font-family:'Cormorant Garamond'; padding-bottom: clamp(2px,0.4vw,5px); background-color: #1F2732;">Criminal Law
+                    </h2>
+                    <p style="font-family: Outfit; font-size: clamp(11px,1vw,15px); color: #D7D7D7; max-width: clamp(160px,18vw,259px); padding-bottom: clamp(16px,1.6vw,26px); border-bottom: 1px solid #3A4553;">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+
+                    <div style="padding-top: clamp(16px,1.7vw,28px); display: flex; justify-content: space-between; align-items: center;">
+                        <img src="../images/Section-3-icon-5.png" alt="" style="width: clamp(28px,2.6vw,40px); height: clamp(24px,2.5vw,40px);">
+                        <h3 style="background-color: #161D27; padding-block: clamp(7px,0.7vw,11px); padding-inline: clamp(18px,1.8vw,28.5px); color: white; font-family: 'Outfit'; font-size: clamp(12px,1vw,15px);">Learn more</h3>
+
+                    </div>
+                </div>
+                <div style="padding-inline: clamp(16px,2.4vw,38px); padding-block: clamp(20px,2.7vw,43.5px); background-color: #1F2732; max-width: clamp(200px,24vw,350px);">
+                    <h2 style="color: white; font-weight: 600; font-size: clamp(16px,1.6vw,26px); font-family:'Cormorant Garamond'; padding-bottom: clamp(2px,0.4vw,5px); background-color: #1F2732;">Family Law</h2>
+                    <p style="font-family: Outfit; font-size: clamp(11px,1vw,15px); color: #D7D7D7; max-width: clamp(160px,18vw,259px); padding-bottom: clamp(16px,1.6vw,26px); border-bottom: 1px solid #3A4553;">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+
+                    <div style="padding-top: clamp(16px,1.7vw,28px); display: flex; justify-content: space-between; align-items: center;">
+                        <img src="../images/Section-3-icon-6.png" alt="" style="width: clamp(28px,2.6vw,41px); height: clamp(24px,2vw,32px);">
+                        <h3 style="background-color: #161D27; padding-block: clamp(7px,0.7vw,11px); padding-inline: clamp(18px,1.8vw,28.5px); color: white; font-family: 'Outfit'; font-size: clamp(12px,1vw,15px);">Learn more</h3>
+
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+   </section>
+
+   <!-- FOURTH SECTION -->
+
+   <section style="padding-bottom: clamp(36px,7.3vw,90px); background-color: #FBFBFB">
+    <div style="margin-inline: auto; padding-top: clamp(50px,4vw,97px); display: flex; flex-direction: column; justify-content: center;  align-items: center;" class="section-4"> 
+
+        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #161D27; max-width: clamp(160px,18vw,270px); text-align: center;">If you're in trouble we can help.</h2>
+        <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.2vw,35px);">
+
+        <p style="font-family: 'Outfit'; font-size: clamp(12px,1vw,15px); color: #909090; max-width: clamp(300px,61vw,520px); text-align: center; padding-bottom: clamp(20px,2.4vw,39px);">There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected humour, oir  which don't look even slightly believable.</p>
+        
+
+        <section style="display: flex; gap: clamp(12px,1.2vw,19.5px); padding-bottom: clamp(18px,2.6vw,39px); border-bottom: 1px solid #CBCBCB; justify-content: center; flex-wrap: wrap; justify-content: center;">
+
+            <div style="display: flex; gap: clamp(7px,0.8vw,13.5px);  align-items: center; padding-inline: clamp(18px,1.9vw,30px); padding-block: clamp(14px,1.5vw,24px); background-color: #F5F5F5;">
+                <div>
+                    <div style="background-image: url(../images/Section-4-icon-2.png); width: clamp(55px,5.5vw,89px);  height: clamp(55px,5.5vw,89px); background-position: 100% 100%; background-size: contain; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: clamp(1px,0.1vw,3px);">
+
+                        <img src="../images/Section-4-love-icon.png" alt="" style="width: clamp(10px,1.1vw,16.5px); height: clamp(10px,1vw,16px);">
+
+                        <p style="font-family: 'Outfit'; font-weight: 500; font-size: clamp(16px,1.4vw,22.5px); color: #1F2732;">7230</p>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(12px,1.4vw,22.5px);">Trusted Clients</h3>
+                    <p style="font-family: 'Outfit'; font-size: clamp(4px,1vw,15px); color: #909090; font-weight: 300;">There are  of Lorem Ipsum</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: clamp(7px,0.8vw,13.5px);  align-items: center; padding-inline: clamp(18px,1.9vw,30px); padding-block: clamp(14px,1.5vw,24px); background-color: #F5F5F5;">
+                <div>
+                    <div style="background-image: url(../images/Section-4-ellipse-5.png); width: clamp(55px,5.5vw,89px);  height: clamp(55px,5.5vw,89px); background-position: 100% 100%; background-size: contain; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: clamp(1px,0.1vw,3px);">
+
+                        <img src="../images/Section-4-star-icon.png" alt="" style="width: clamp(10px,1.3vw,18px); height: clamp(10px,1.2vw,19px);">
+
+                        <p style="font-family: 'Outfit'; font-weight: 500; font-size: clamp(16px,1.4vw,22.5px); color: #1F2732;">98%</p>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(12px,1.4vw,22.5px);">Successful Cases</h3>
+                    <p style="font-family: 'Outfit'; font-size: clamp(4px,1vw,15px); color: #909090; font-weight: 300;">There are  of Lorem Ipsum</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: clamp(7px,0.8vw,13.5px);  align-items: center; padding-inline: clamp(18px,1.9vw,30px); padding-block: clamp(12px,1.5vw,24px); background-image: url(../images/Section-4-bacground-image.png); width: clamp(160px,21vw,338px); background-repeat: no-repeat; padding-left: clamp(20px,2.3vw,37.5px); background-size: cover; background-position: center;">
+                <div >
+                    <h2 style="font-family: 'Outfit'; font-size: clamp(16px,1.4vw,22.5px); font-weight: 600; color: #FFFFFF;">15,890+</h2>
+                    <p style="max-width: clamp(98px,8vw,115px); font-family: 'Outfit'; font-weight: 400; color: #FFFFFF; font-size: clamp(11px,1vw,15px);">Criminal Defense Case Served</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Meet The Partners -->
+
+        <section style="padding-top: clamp(30px,6vw,90px);">
+            <div style="display: flex; justify-content: center; gap: clamp(15px,1.3vw,21px); padding-bottom: clamp(16px,2.5vw,40px);">
+                <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(40px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.2vw,35px);">
+
+                <h2  style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.15vw,34px); color: #161D27; max-width: clamp(180px,19vw,280px); line-height: clamp(20px,2.4vw,39px); white-space: nowrap;">Meet The Partners</h2>
+
+                <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(40px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.2vw,35px);">
+            </div>
+
+            <!-- NO NEED FOR THIS MAX-WIDTH ON THE SOCIAL ICONS "max-width: clamp(550px,53.4vw,854px);" -->
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: clamp(30px,5.3vw,85px); flex-wrap: wrap; justify-content: center;">
+                <img src="../images/Section-4-client-logo-1.png" alt="" style="width: clamp(80px,6.4vw,103px); height: clamp(18px,2.1vw,33px);">
+                <img src="../images/Section-4-client-logo-2.png" alt="" style="width: clamp(48px,5vw,80px); height: clamp(46px,4.9vw,79px);">
+                <img src="../images/Section-4-client-logo-3.png" alt="" style="width: clamp(85px,8vw,128px); height: clamp(23px,2.1vw,33px);">
+                <img src="../images/Section-4-client-logo-4.png" alt="" style="width: clamp(70px,7.1vw,113px); height: clamp(23px,2.1vw,33px);">
+                <img src="../images/Section-4-client-logo-5.png" alt="" style="width: clamp(66px,5.8vw,91.5px); height: clamp(25px,2.3vw,35px);">
+
+            </div>
+
+        </section>
+    </div>
+   </section>
+
+   <!-- FIFTH SECTION -->
+
+   <!-- height: clamp(40rem,100vh,70rem); -->
+
+   <section style="background-image: url(../images/Section-5-background-image.png); background-size: cover; background-repeat: no-repeat; padding-block: clamp(70px,9.4vw,151px)">
+
+    <div style="margin-inline: auto; padding-block: clamp(56px,6.8vw,108px); padding-inline: clamp(30px,3.7vw,59px); background-color: rgba(31, 39, 50, 0.85); display: flex; gap: 8px; flex-wrap: wrap; row-gap: clamp(12px,1.4vw,20px);" class="section-5">
+
+        <div>
+            <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2vw,33.7px); color: #FFFFFF; max-width: clamp(160px,18vw,277.5px);">We Are Top Lawyers And History</h2>
+            
+            <img src="../images/Section-5-plus-icon.png" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.4vw,37.5px);">
+
+            <section style="display: flex; flex-direction: column; gap: clamp(16px,2.5vw,36px);">
+
+                <div style="display: flex; flex-direction: column; gap: clamp(5px,0.6vw,9px);">
+                    <h3 style="font-family: 'Outfit'; font-weight: 600; font-size: clamp(10px,1vw,15px); color: #D1B06B;">1995 – Opening</h3>
+                    <p style="font-family: 'Outfit'; color: #D7D7D7; font-size: clamp(12px,0.96vw,15px); max-width: clamp(170px,17vw,270px);">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: clamp(5px,0.6vw,9px);">
+                    <h3 style="font-family: 'Outfit'; font-weight: 600; font-size: clamp(10px,1vw,15px); color: #D1B06B;">2011 – Open Branch Office</h3>
+                    <p style="font-family: 'Outfit'; color: #D7D7D7; font-size: clamp(12px,0.96vw,15px); max-width: clamp(170px,17vw,270px);">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: clamp(5px,0.6vw,9px);">
+                    <h3 style="font-family: 'Outfit'; font-weight: 600; font-size: clamp(10px,1vw,15px); color: #D1B06B;">2015 – 18000K Client’s</h3>
+                    <p style="font-family: 'Outfit'; color: #D7D7D7; font-size: clamp(12px,0.96vw,15px); max-width: clamp(170px,17vw,270px);">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: clamp(5px,0.6vw,9px);">
+                    <h3 style="font-family: 'Outfit'; font-weight: 600; font-size: clamp(10px,1vw,15px); color: #D1B06B;">2020– Best Law & Firm Awwards</h3>
+                    <p style="font-family: 'Outfit'; color: #D7D7D7; font-size: clamp(12px,0.96vw,15px); max-width: clamp(170px,17vw,270px);">There are many variations of passages of Lorem Ipsum available.</p>
+                </div>
+            </section>
+        </div>
+
+        <div style="background-image: url(../images/Section-5-image.png); background-repeat: no-repeat; background-size: 100% 100%;" class="section-5-middle-image">    
+        </div>
+
+        <div class="top-lawywer-2">
+            <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2vw,33.7px); color: #FFFFFF; max-width: clamp(150px,18vw,277.5px);" class="top-lawyers">We Are Specialised
+                And Experienced</h2>
+            
+            <img src="../images/Section-5-plus-icon.png" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.4vw,37.5px);" class="top-lawyers">
+
+            <p style="max-width: clamp(200px,22vw,344px); color: #D7D7D7; font-size: clamp(12px,0.96vw,15px); font-family: 'Outfit'; padding-bottom: clamp(20px,2.5vw,39.8px);">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium deleniti atque corrupti quos  molestias excepturi odio dignissimos ducimus qui blanditiis sint occaecati.</p>
+
+            <section style="display: flex;flex-direction: column; gap: clamp(18px,1vw,20px);">
+
+               <div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <h3 style="font-size: clamp(12px,0.96vw,15px); font-family: 'Outfit'; color: white;">Divorce And Family Cases</h3>
+                        <p style="font-family: 'Output'; font-weight: 500; color: white; padding-bottom: clamp(7px,0.7vw,10.5px);">75%</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/Digram-75.png" alt="" style="width: clamp(180px,22vw,353px);">
+                    </div>
+               </div>
+
+               <div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <h3 style="font-size: clamp(12px,0.96vw,15px); font-family: 'Outfit'; color: white;">Property And Construction</h3>
+                        <p style="font-family: 'Output'; font-weight: 500; color: white; padding-bottom: clamp(7px,0.7vw,10.5px);">80%</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/Section-5-80.png" alt="" style="width: clamp(180px,22vw,353px);">
+                    </div>
+               </div>
+
+               <div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <h3 style="font-size: clamp(12px,0.96vw,15px); font-family: 'Outfit'; color: white;">Banking And Finance</h3>
+                        <p style="font-family: 'Output'; font-weight: 500; color: white; padding-bottom: clamp(7px,0.7vw,10.5px);">75%</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/Digram-75.png" alt="" style="width: clamp(180px,22vw,353px);">
+                    </div>
+                </div>
+
+                <div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <h3 style="font-size: clamp(12px,0.96vw,15px); font-family: 'Outfit'; color: white;">Banking And Finance</h3>
+                        <p style="font-family: 'Output'; font-weight: 500; color: white; padding-bottom: clamp(7px,0.7vw,10.5px);">90%</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/Section-5-90.png" alt="" style="width: clamp(180px,22vw,353px);">
+                    </div>
+                </div>
+
+                <button style="padding-block: clamp(16px,1.3vw,20px); padding-inline: clamp(20px,3.1vw,49.5px); background-color: #D1B06B; color: #1F2732; font-family: 'Outfit'; font-weight: 400; max-width: clamp(150px,13.5vw,214px); white-space: nowrap;">Free Consulting</button>
+
+
+
+            </section>    
+
+        </div>    
+    </div>
+
+   </section>
+
+   <!-- SIXTH SECTION -->
+
+   <section style="background-color: #1F2732;">
+
+    <div style="margin-inline: auto; padding-block: clamp(70px,8.8vw,141px); background-color: #1F2732; display: flex; justify-content: center; flex-direction: column; align-items: center;" class="section-6">
+
+        <div style="display: flex; flex-direction: column;
+        align-items: center;">
+            <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2vw,33.7px); color: #FFFFFF; white-space: nowrap;">Client Opinions & Reviews</h2>
+            <img src="../images/Section-6-plus-icon.png" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.2vw,35px);">
+        </div>
+ 
+        <div style="padding-top: clamp(30px,3.3vw,52.5px); display: flex; gap: clamp(30px,3.3vw,52.5px); justify-content: flex-start; align-items: flex-start; justify-content: center;" class="four-inversed-image">
+
+        <section>
+
+
+                <div style="padding-inline: clamp(19px,2.25vw,36px); padding-block: clamp(25px,3.3vw,52.5px); display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(12px,1.2vw,19.5px); background-color: #2E3947; border-radius: 1px 1px 1px 40px;">
+
+                    <img src="../images/earpod.png" alt="" style="width: clamp(15px,1.5vw,23px);">
+                    <p style="max-width: clamp(100px,11.3vw,180px); font-size: 'Outfit'; font-size: clamp(11px,0.9vw,15px); color: #D7D7D7; font-family: 'Outfit';">There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+
+                </div>
+
+                <div style="padding-top: clamp(1px,0.5vw,2px); display: flex; align-items: center; gap: clamp(7px,0.8vw,12px);">
+                    <div style="width: clamp(45px,5vw,70px); height: clamp(45px,5vw,70px); border-radius: 50%; background-color: #161D27; display: flex; justify-content: center; align-items: center; clip-path: circle(40%);">
+                        <img src="../images/Section-6-image-11.png" alt="" style="width: clamp(42px,4vw,62px);">
+                    </div>
+
+                <section>
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.5vw,23px); color: #FFFFFF;">Nattasha</h2>
+                        <p  style="max-width: clamp(100px,11.3vw,180px); font-size: 'Outfit'; font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit';">Junior Lawyer</p>
+                </section>
+                </div>
+
+        </section>
+
+        <section style="display: flex; flex-direction: column-reverse;">
+
+
+            <div style="padding-inline: clamp(19px,2.25vw,36px); padding-block: clamp(25px,2.7vw,52.5px); display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(12px,1.2vw,19.5px); background-color: #2E3947; border-radius: 40px 1px 1px 1px;">
+
+                <img src="../images/earpod.png" alt="" style="width: clamp(15px,1.5vw,23px);">
+                <p style="max-width: clamp(100px,11.3vw,180px); font-size: 'Outfit'; font-size: clamp(11px,0.9vw,15px); color: #D7D7D7; font-family: 'Outfit';">There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+
+            </div>
+
+            <div style="display: flex; align-items: center; gap: clamp(7px,0.8vw,12px); padding-bottom: clamp(1px,0.5vw,2px);">
+                <div style="width: clamp(45px,5vw,70px); height: clamp(45px,5vw,70px); border-radius: 50%; background-color: #161D27; display: flex; justify-content: center; align-items: center; clip-path: circle(39%);">
+                    <img src="../images/Section-6-image-2.png" alt="" style="width: clamp(42px,4vw,62px);">
+                </div>
+
+                <section>
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.5vw,23px); color: #FFFFFF;">Minci pall</h2>
+                        <p  style="max-width: clamp(100px,11.3vw,180px); font-size: 'Outfit'; font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit';">Consultant</p>
+                </section>
+            </div>
+
+       </section>
+
+       <section>
+
+
+            <div style="padding-inline: clamp(19px,2.25vw,36px); padding-block: clamp(25px,3.3vw,52.5px); display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(12px,1.2vw,19.5px); background-color: #2E3947; border-radius: 1px 1px 1px 40px;">
+
+                <img src="../images/earpod.png" alt="" style="width: clamp(15px,1.5vw,23px);">
+                <p style="max-width: clamp(100px,11.3vw,180px); font-size: 'Outfit'; font-size: clamp(11px,0.9vw,15px); color: #D7D7D7; font-family: 'Outfit';">There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+
+            </div>
+
+            <div style="padding-top: clamp(1px,0.5vw,2px); display: flex; align-items: center; gap: clamp(7px,0.8vw,12px); padding-bottom: clamp(1px,0.5vw,2px);">
+                <div style="width: clamp(45px,5vw,70px); height: clamp(45px,5vw,70px); border-radius: 50%; background-color: #161D27; display: flex; justify-content: center; align-items: center; clip-path: circle(40%);">
+                    <img src="../images/Section-6-image-3.png" alt="" style="width: clamp(42px,4vw,62px);">
+                </div>
+
+                <section>
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.5vw,23px); color: #FFFFFF;">Julia Rose</h2>
+                        <p  style="max-width: clamp(100px,11.3vw,180px); font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit';">Consultant</p>
+                </section>
+            </div>
+
+       </section>
+
+       <section style="display: flex; flex-direction: column-reverse;">
+
+
+        <div style="padding-inline: clamp(19px,2.25vw,36px); padding-block: clamp(25px,2.7vw,52.5px); display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(12px,1.2vw,19.5px); background-color: #2E3947; border-radius: 40px 1px 1px 1px;">
+
+            <img src="../images/earpod.png" alt="" style="width: clamp(15px,1.5vw,23px);">
+            <p style="max-width: clamp(100px,11.3vw,180px); font-size: 'Outfit'; font-size: clamp(11px,0.9vw,15px); color: #D7D7D7; font-family: 'Outfit';">There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+
+        </div>
+
+        <div style="display: flex; align-items: center; gap: clamp(7px,0.8vw,12px); padding-bottom: clamp(1px,0.5vw,2px);">
+            <div style="width: clamp(45px,5vw,70px); height: clamp(45px,5vw,70px); border-radius: 50%; background-color: #161D27; display: flex; justify-content: center; align-items: center; clip-path: circle(39%);">
+                <img src="../images/Section-6-image-4.png" alt="" style="width: clamp(42px,4vw,62px);">
+            </div>
+
+            <section>
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.5vw,23px); color: #FFFFFF;">John David</h2>
+                    <p  style="max-width: clamp(100px,11.3vw,180px); font-size: 'Outfit'; font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit';">Designer</p>
+            </section>
+        </div>
+
+       </section>
+
+        </div>
+    
+    
+    </div>
+   </section>
+
+   <!-- SEVENTH SECTION -->
+
+   <section style="background-color: #FFFFFF">
+        <div style="margin-inline: auto; padding-block: clamp(70px,8vw,100px); display: flex; flex-direction: column; justify-content: center; align-items: center;" class="section-7">
+            <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2vw,33.7px); color: #161D27; text-align: center; max-width: clamp(260px,31.7vw,507px);">Our Experienced Attorney Are Ready To answer any questions</h2>
+
+            <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.2vw,35px);">
+
+            <section style="display: flex; gap: clamp(15px,1.34vw,22px); padding-bottom: clamp(26px,2.8vw,44px); flex-wrap: wrap; justify-content: center;">
+
+                <div>
+                    <div style="background-image: url(../images/Section-7-image-1.png); width: clamp(260px,21vw,336px);  height: clamp(350px,28vw,445px); background-position: 100% 100%; background-size: cover; background-repeat: no-repeat; display: flex; align-items: end; justify-content: center; position: relative;">
+                        <div class="social-icons">
+                            <img src="../images/Instagram-icon.png" alt="">
+                            <img src="../images/Facebook-icon.png" alt="">
+                            <img src="../images/Twitter.png" alt="">
+                            <img src="../images/Pintrest.png" alt="">
+                        </div>
+
+                        <div style="width: clamp(30px,4.5vw,71px); height: 2px; border-bottom: 1px solid #D1B06B;position: absolute;"></div>
+
+                    </div>
+
+                    <section style="display: flex; text-align: center; flex-direction: column; align-items: center; padding-top: clamp(10px,1.1vw,16.4px);" >
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(16px,1.4vw,22.5px); color: #1C1C1C;">Thomas Daniyel</h2>
+                        <p  style="max-width: clamp(100px,11.3vw,180px); font-family: 'Outfit'; font-size: clamp(11px,0.9vw,15px); color: #D1B06B; font-family: 'Outfit'; text-align: center;">Civil Attorney</p>
+                    </section>
+                </div>
+
+                <div>
+                    <div style="background-image: url(../images/Section-7-image-22.png); width: clamp(260px,21vw,336px);  height: clamp(350px,28vw,445px); background-position: 100% 100%; background-size: cover; background-repeat: no-repeat; display: flex; align-items: end; justify-content: center; position: relative;">
+                        <div class="social-icons">
+                            <img src="../images/Instagram-icon.png" alt="">
+                            <img src="../images/Facebook-icon.png" alt="">
+                            <img src="../images/Twitter.png" alt="">
+                            <img src="../images/Pintrest.png" alt="">
+                        </div>
+
+                        <div style="width: clamp(30px,4.5vw,71px); height: 2px; border-bottom: 1px solid #D1B06B;position: absolute;"></div>
+
+                    </div>
+
+                    <section style="display: flex; text-align: center; flex-direction: column; align-items: center; padding-top: clamp(10px,1.1vw,16.4px);" >
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(16px,1.4vw,22.5px); color: #1C1C1C;">Nikolona Gail</h2>
+                        <p  style="max-width: clamp(100px,11.3vw,180px); font-family: 'Outfit'; font-size: clamp(11px,0.9vw,15px); color: #D1B06B; font-family: 'Outfit'; text-align: center;">Senior Attorney</p>
+                    </section>
+                </div>
+
+                <div>
+                    <div style="background-image: url(../images/Section-7-image-33.png); width: clamp(260px,21vw,336px);  height: clamp(350px,28vw,445px); background-position: 100% 100%; background-size: cover; background-repeat: no-repeat; display: flex; align-items: end; justify-content: center; position: relative;">
+                        <div class="social-icons">
+                            <img src="../images/Instagram-icon.png" alt="">
+                            <img src="../images/Facebook-icon.png" alt="">
+                            <img src="../images/Twitter.png" alt="">
+                            <img src="../images/Pintrest.png" alt="">
+                        </div>
+
+                        <div style="width: clamp(30px,4.5vw,71px); height: 2px; border-bottom: 1px solid #D1B06B;position: absolute;"></div>
+
+                    </div>
+
+                    <section style="display: flex; text-align: center; flex-direction: column; align-items: center; padding-top: clamp(10px,1.1vw,16.4px);" >
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(16px,1.4vw,22.5px); color: #1C1C1C;">Michal David</h2>
+                        <p  style="max-width: clamp(100px,11.3vw,180px); font-family: 'Outfit'; font-size: clamp(11px,0.9vw,15px); color: #D1B06B; font-family: 'Outfit'; text-align: center;">Criminal Attorney</p>
+                    </section>
+                </div>
+
+            </section>
+
+            <button style="padding-block: clamp(10px,1.3vw,21px); padding-inline: clamp(20px,3.5vw,54px); color: #1F2732; font-family: 'Outfit'; font-weight: 500; white-space: nowrap; border: 1px solid #1F2732; text-align: center;"><a href="../src/testimonial.html">Meet Attorney</a></button>
+        
+        </div>
+
+
+   </section>
+
+   <!-- EIGHTH SECTION -->
+
+   <section style="background-color: #FFFFFF; background-color: #1F2732;">
+        <div style="margin-inline: auto; padding-block: clamp(30px,9.4vw,150px); display: flex; gap: clamp(20px,6vw,98px);" class="section-8">
+
+            <div style="padding-block: clamp(16px,1.5vw,24.8px);">
+                <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2vw,33.7px); color: #FFFFFF; text-align: start; max-width: clamp(260px,27.98vw,448px); padding-bottom: clamp(10px,1.1vw,17.3px);">Our Expert professional law team is always ready to serve you the best solution!</h2>
+
+                <p style="max-width: clamp(250px,22.7vw,411.8px); font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit'; padding-bottom: clamp(14px,1.5vw,24.8px);">There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+
+                <button style="padding-block: clamp(10px,1.3vw,21px); padding-inline: clamp(30px,4.1vw,66px); color: #1F2732; font-family: 'Outfit'; font-weight: 500; white-space: nowrap; text-align: center; background-color: #D1B06B;"><a href="../src/contact.html">Contact Us</a></button>
+
+            </div>
+
+            <div style="background-color: white; padding: clamp(10px,1.9vw,30px); max-height: clamp(240px,30vw,340px); height: fit-content;" class="a-consultation-box">
+
+                <div style="border: 14px solid #DFDFDF; color: white; padding-block: clamp(12px,3.2vw,51px); padding-inline: clamp(14px,2.3vw,36px);">
+
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 600; font-size: clamp(20px,2vw,33.7px); color: #161D27; text-align: start; max-width: clamp(210px,20.1vw,321px); white-space: nowrap;">Get a Free Consultation</h2>
+
+                    <p style="font-family: 'Output'; font-weight: 400; color: #909090; padding-bottom: clamp(15px,1.7vw,27px); max-width: clamp(230px,35.2vw,370px); font-size: clamp(12px,1.3vw,16.5px);">There are  of Lorem Ipsum available, but the majority by injected humour  which don't look even.</p>
+
+                    <div style="display: flex; gap: clamp(5px,0.6vw,8.5px);">
+                        <div style="padding: clamp(10px,1vw,16px); background-color: #CCAA60; width: clamp(30px,3.3vw,52.5px); height: clamp(30px,3.3vw,52.5px);">
+                            <img src="../images/white-telephone.png" alt="">
+                        </div>
+
+                        <div>
+                            <h3 style="font-family: 'Output'; font-weight: 500; font-size: clamp(10px,0.8vw,14px); color: #1F2732;">Call Us On:</h3>
+                            <h3 style="font-family: 'Output'; font-weight: 600; font-size: clamp(16px,1.4vw,22px); color: #161D27;">911-987654321</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+   </section>
+
+   <!-- NINTH SECTION  -->
+
+   <section style="background-image: url(../images/Section-8-background-image.png); background-position: 100% 100%; background-repeat: no-repeat; background-size: cover;">
+        
+    <div style="margin-inline: auto; padding-top: clamp(70px,11vw,175px); display: flex; padding-bottom: clamp(60px,9.3vw,149px); width: 100%; justify-content: center;" class="section-9">
+
+            <div style="padding-block: clamp(40px,4.5vw,71px); padding-inline: clamp(68px,7.4vw,118.5px); background-color: #1F2732; display: flex; flex-direction: column; max-width: 85%;">
+
+                <div style="display: flex; gap: clamp(28px,3.1vw,49px); padding-bottom: clamp(28px,2.3vw,43px); flex-wrap: wrap; justify-content: center;">
+                    <input type="text" placeholder="Full Name *" style="font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit'; font-family: 400; background-color:  #1F2732; padding-bottom: clamp(4px,0.5vw,8px); border-bottom: 1px solid #3A4553; width: clamp(240px,23.9vw,382.5px);">
+
+                    <input type="email" placeholder="Email Address *" style="font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit'; font-family: 400; background-color:  #1F2732; padding-bottom: clamp(4px,0.5vw,8px); border-bottom: 1px solid #3A4553; width: clamp(240px,23.9vw,382.5px);">
+                </div>
+
+                <div style="display: flex; gap: clamp(28px,3.1vw,49px); padding-bottom: clamp(28px,2.3vw,43px); flex-wrap: wrap; justify-content: center;">
+                    <input type="tel" placeholder="Phone Number *" style="font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit'; font-family: 400; background-color:  #1F2732; padding-bottom: clamp(4px,0.5vw,8px); border-bottom: 1px solid #3A4553; width: clamp(240px,23.9vw,382.5px);">
+
+                    <input type="text" placeholder="Subject *" style="font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit'; font-family: 400; background-color:  #1F2732; padding-bottom: clamp(4px,0.5vw,8px); border-bottom: 1px solid #3A4553; width: clamp(240px,23.9vw,382.5px);">
+                </div>
+
+                <div style="display: flex; gap: clamp(28px,3.1vw,49px); padding-bottom: clamp(28px,2.3vw,43px); justify-content: center; align-items: center;">
+                    <input type="text" placeholder="Your Message *" style="font-size: clamp(11px,0.7vw,15px); color: #D7D7D7; font-family: 'Outfit'; font-family: 400; background-color:  #1F2732; padding-bottom: clamp(45px,4.4vw,70px); border-bottom: 1px solid #3A4553;" class="message-input">
+                </div>
+
+                <button style="padding-block: clamp(8px,1vw,16px); padding-inline: clamp(18px,2.1vw,34px); color: #1F2732; font-family: 'Outfit'; font-weight: 500; white-space: nowrap; text-align: center; background-color: white;font-size: clamp(12px,1vw,17px); align-self: center;">Get An Appoinment</button>
+                
+            </div>
+        
+        </div>
+   </section>
+
+   <!-- TENTH SECTION / BLOG SECTION -->
+
+    <section style="background-color: #1F2732;">
+        <div style="margin-inline: auto; padding-top: clamp(40px,9.3vw,149px); padding-bottom: clamp(40px,6vw,100px); display: flex; flex-direction: column; justify-content: center; align-items: center;" class="section-10">
+
+            <h2 style="font-family: 'Cormorant Garamond'; font-weight: 600; font-size: clamp(20px,2vw,33.7px); color: white; padding-bottom: clamp(5px,0.7vw,10px);">Recent Blogs</h2>
+
+            <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(25px,3vw,48px);">
+
+            <div style="display: flex; gap: clamp(18px,1.7vw,27px); width: 100%; padding-bottom: clamp(36px,4vw,63px); border-bottom: 1px solid #3A4553;" class="blog-intro">
+                <img src="../images/Section-10-image-1.png" alt="" style="width: clamp(300px,32.7vw,522px); height: clamp(230px,21.8vw,347px);">
+
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <p style="font-family: 'Outfit'; font-weight: 400; color: #D1B06B; padding-bottom: clamp(11px,1.2vw,19.5px); font-size: clamp(10px,1vw,15px); border-bottom: 1px solid #3A4553; line-height: 140%;"><a href=""> Criminal Law, Kidnapping &nbsp;  |  &nbsp; Sunday, July 24, 2022</a></p>
+
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2vw,33.7px); color: white; padding-bottom: clamp(3px,0.4vw,6px); padding-top: clamp(8px,0.9vw,14px); max-width: clamp(280px,27.8vw,441px);">An Independent Examination Of Charity Accounts</h2>
+
+                    <p  style="font-family: 'Outfit'; font-weight: 400; color: #D7D7D7; font-size: clamp(10px,1vw,15px); max-width: clamp(300px,34vw,501px); padding-bottom: clamp(16px,1.6vw,26.5px);">There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+
+                    <p style="font-family: 'Outfit'; font-weight: 500; color: #D1B06B; font-size: clamp(10px,1.1vw,17px);"><a href="" style="text-decoration: underline;">Read More</a></p>
+                </div>
+            </div>
+
+            <div style="padding-top: clamp(40px,4.7vw,75px); display: flex; flex-wrap: wrap; gap: clamp(14px,1.6vw,26px);  justify-content: center">
+
+                <div style="display: flex; flex-direction: column;gap: clamp(18px,1.7vw,27px); width: 100%; padding-bottom: clamp(36px,4vw,63px); width: clamp(180px,22.7vw,417px);">
+                    <img src="../images/Section-10-blog-1.png" alt="" style="width: clamp(180px,23vw,417px); height: clamp(160px,15.6vw,250px);">
+    
+                    <div style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="font-family: 'Outfit'; font-weight: 400; color: #D1B06B; padding-bottom: clamp(11px,1.2vw,19.5px); font-size: clamp(10px,1vw,15px); border-bottom: 1px solid #3A4553; line-height: 140%;"><a href=""> Legal Advice &nbsp;  |  &nbsp;  Sunday, July 24, 2022 </a></p>
+    
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.6vw,21px); color: white; padding-bottom: clamp(12px,1.2vw,18px); padding-top: clamp(8px,0.9vw,14px); max-width: clamp(280px,22vw,441px);">Prevent A Further Breach of The Peace In The States</h2>
+    
+                        <p  style="font-family: 'Outfit'; font-weight: 400; color: #D7D7D7; font-size: clamp(10px,0.9vw,15px); max-width: clamp(200px,20vw,332px); padding-bottom: clamp(12px,1.2vw,18px);">There are  of Lorem Ipsum available, but majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+    
+                        <p style="font-family: 'Outfit'; font-weight: 500; color: #D1B06B; font-size: clamp(10px,1.1vw,17px);"><a href="" style="text-decoration: underline;">Read More</a></p>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column;gap: clamp(18px,1.7vw,27px); width: 100%; padding-bottom: clamp(36px,4vw,63px); width: clamp(180px,22.7vw,417px);">
+                    <img src="../images/Section-10-blog-2.png" alt="" style="width: clamp(180px,23vw,417px); height: clamp(160px,15.6vw,250px);">
+    
+                    <div style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="font-family: 'Outfit'; font-weight: 400; color: #D1B06B; padding-bottom: clamp(11px,1.2vw,19.5px); font-size: clamp(10px,1vw,15px); border-bottom: 1px solid #3A4553; line-height: 140%;"><a href=""> Legal Advice  &nbsp; |  &nbsp; Friday, August 15, 2022</a></p>
+    
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.6vw,21px); color: white; padding-bottom: clamp(12px,1.2vw,18px); padding-top: clamp(8px,0.9vw,14px); max-width: clamp(280px,21vw,441px);">Failing to Carry Out The Terms of A Business Contract</h2>
+    
+                        <p  style="font-family: 'Outfit'; font-weight: 400; color: #D7D7D7; font-size: clamp(10px,0.9vw,15px); max-width: clamp(200px,20vw,332px); padding-bottom: clamp(12px,1.2vw,18px);">There are  of Lorem Ipsum available, but majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+    
+                        <p style="font-family: 'Outfit'; font-weight: 500; color: #D1B06B; font-size: clamp(10px,1.1vw,17px);"><a href="" style="text-decoration: underline;">Read More</a></p>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column;gap: clamp(18px,1.7vw,27px); width: 100%; padding-bottom: clamp(36px,4vw,63px); width: clamp(180px,22.7vw,417px);">
+                    <img src="../images/Section-10-blog-3.png" alt="" style="width: clamp(180px,23vw,417px); height: clamp(160px,15.6vw,250px);">
+    
+                    <div style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="font-family: 'Outfit'; font-weight: 400; color: #D1B06B; padding-bottom: clamp(11px,1.2vw,19.5px); font-size: clamp(10px,1vw,15px); border-bottom: 1px solid #3A4553; line-height: 140%;"><a href=""> Legal Advice &nbsp;  |  &nbsp;  Sunday, July 24, 2022 </a></p>
+    
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.6vw,21px); color: white; padding-bottom: clamp(12px,1.2vw,18px); padding-top: clamp(8px,0.9vw,14px); max-width: clamp(280px,20vw,441px);">How Legal Professionals Work: The Defense Objects In The Event</h2>
+
+                        <p  style="font-family: 'Outfit'; font-weight: 400; color: #D7D7D7; font-size: clamp(10px,0.9vw,15px); max-width: clamp(200px,20vw,332px); padding-bottom: clamp(12px,1.2vw,18px);">There are  of Lorem Ipsum available, but majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+    
+                        <p style="font-family: 'Outfit'; font-weight: 500; color: #D1B06B; font-size: clamp(10px,1.1vw,17px);"><a href="" style="text-decoration: underline;">Read More</a></p>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column;gap: clamp(18px,1.7vw,27px); width: 100%; padding-bottom: clamp(36px,4vw,63px); width: clamp(180px,22.7vw,417px);">
+                    <img src="../images/Section-10-blog-4.png" alt="" style="width: clamp(180px,23vw,417px); height: clamp(160px,15.6vw,250px);">
+    
+                    <div style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="font-family: 'Outfit'; font-weight: 400; color: #D1B06B; padding-bottom: clamp(11px,1.2vw,19.5px); font-size: clamp(10px,1vw,15px); border-bottom: 1px solid #3A4553; line-height: 140%;"><a href=""> Legal Advice &nbsp;  |  &nbsp;  Sunday, July 24, 2022 </a></p>
+    
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.6vw,21px); color: white; padding-bottom: clamp(12px,1.2vw,18px); padding-top: clamp(8px,0.9vw,14px); max-width: clamp(280px,22vw,441px);">Riding solo to the rescue of her beloved nonprofits</h2>
+    
+                        <p  style="font-family: 'Outfit'; font-weight: 400; color: #D7D7D7; font-size: clamp(10px,0.9vw,15px); max-width: clamp(200px,20vw,332px); padding-bottom: clamp(12px,1.2vw,18px);">There are  of Lorem Ipsum available, but majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+    
+                        <p style="font-family: 'Outfit'; font-weight: 500; color: #D1B06B; font-size: clamp(10px,1.1vw,17px);"><a href="" style="text-decoration: underline;">Read More</a></p>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column;gap: clamp(18px,1.7vw,27px); padding-bottom: clamp(36px,4vw,63px); width: clamp(180px,22.7vw,417px);">
+                    <img src="../images/Section-10-blog-5.png" alt="" style="width: clamp(180px,23vw,417px); height: clamp(160px,15.6vw,250px);">
+    
+                    <div style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="font-family: 'Outfit'; font-weight: 400; color: #D1B06B; padding-bottom: clamp(11px,1.2vw,19.5px); font-size: clamp(10px,1vw,15px); border-bottom: 1px solid #3A4553; line-height: 140%;"><a href=""> Legal Advice  &nbsp; |  &nbsp;  Friday, August 15, 2022</a></p>
+    
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.6vw,21px); color: white; padding-bottom: clamp(12px,1.2vw,18px); padding-top: clamp(8px,0.9vw,14px); max-width: clamp(280px,22vw,441px);">Case Filed on Behalf of Injured Tugboat Worker</h2>
+    
+                        <p  style="font-family: 'Outfit'; font-weight: 400; color: #D7D7D7; font-size: clamp(10px,0.9vw,15px); max-width: clamp(200px,20vw,332px); padding-bottom: clamp(12px,1.2vw,18px);">There are  of Lorem Ipsum available, but majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+    
+                        <p style="font-family: 'Outfit'; font-weight: 500; color: #D1B06B; font-size: clamp(10px,1.1vw,17px);"><a href="" style="text-decoration: underline;">Read More</a></p>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column;gap: clamp(18px,1.7vw,27px); padding-bottom: clamp(36px,4vw,63px); width: clamp(180px,22.7vw,417px);">
+                    <img src="../images/Section-10-blog-6.png" alt="" style="width: clamp(180px,23vw,417px); height: clamp(160px,15.6vw,250px);">
+    
+                    <div style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <p style="font-family: 'Outfit'; font-weight: 400; color: #D1B06B; padding-bottom: clamp(11px,1.2vw,19.5px); font-size: clamp(10px,1vw,15px); border-bottom: 1px solid #3A4553; line-height: 140%;"><a href=""> Legal Advice &nbsp;  |  &nbsp;  Sunday, July 24, 2022 </a></p>
+    
+                        <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.6vw,21px); color: white; padding-bottom: clamp(12px,1.2vw,18px); padding-top: clamp(8px,0.9vw,14px); max-width: clamp(280px,22vw,441px);">How Companies Choose Legal Representation</h2>
+    
+                        <p  style="font-family: 'Outfit'; font-weight: 400; color: #D7D7D7; font-size: clamp(10px,0.9vw,15px); max-width: clamp(200px,20vw,332px); padding-bottom: clamp(12px,1.2vw,18px);">There are  of Lorem Ipsum available, but majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+    
+                        <p style="font-family: 'Outfit'; font-weight: 500; color: #D1B06B; font-size: clamp(10px,1.1vw,17px);"><a href="" style="text-decoration: underline;">Read More</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ELEVENTN SECTION WITH BACKGROUND IMAGE ONLY -->
+
+    <section style="background-image: url(../images/Section-11-background-image.jpg); height: clamp(130px,15.5vw,248px); background-size: cover; background-repeat: no-repeat;">
+
+    </section>
+
+    <!--TWELVTH SECTION / FOOTER-->
+
+    <section style="background-color: #1F2732;">
+        <div style="margin-inline: auto; padding-block: clamp(40px,6.5vw,104px);" class="section-12">
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: clamp(18px,2.1vw,34px); padding-bottom: clamp(30px,4.3vw,68px);">
+                <img src="../images/Section-12-left-hand-side-plus-icon.png" alt="" style="max-width: clamp(140px,40vw,390px); height: clamp(20px,2.5vw,38px);" class="section-12-plus-icon">
+
+                <div style="display: flex; gap: clamp(4px,0.6vw,9px); align-items: center; margin-left: clamp(-5px,-1.4vw,-20px);">
+                    <img src="../images/Section-12-Attorneystar-icon.png" alt="" style="width: clamp(26px,2.6vw,42px); height: clamp(30px,3.7vw,58.5px);">
+
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 600; font-size: clamp(26px,3.1vw,48.8px); color: 
+                    #FFFFFF;">Attorneyster</h2>
+                </div>
+
+                <img src="../images/Section-12-right-hand-plus-icon.png" alt="" style="max-width: clamp(140px,40vw,390px); height: clamp(20px,2.4vw,38px);" class="section-12-plus-icon">
+            </div>
+
+            <section style="display: flex; gap: clamp(30px,6.7vw,107px); justify-content: space-between; padding-bottom: clamp(30px,4.3vw,68px); border-bottom: 1px solid #3A4553; flex-wrap: wrap;">
+
+                <div style="width: clamp(160px,13.6vw,218px)">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.4vw,22px); color: 
+                    #FFFFFF; padding-top: clamp(10px,1.1vw,18px); padding-bottom: clamp(16px,1.5vw,25px); border-block: 1px solid #3A4553;">Quick Link</h2>
+
+                    <div style="padding-top: clamp(16px,1.5vw,25px); display: flex; gap: clamp(20px,2.3vw,37px);">
+                        <ul class="footer-unordered-list">
+                        <li><a href="../src/index.html">Home</a></li>
+                        <li><a href="../src/about.html">About</a></li>
+                        <li><a href="../src/contact.html">Contact</a></li>
+                        <li><a href="../src/blog-page.html">Blog</a></li>
+                        <li><a href="../src/blog-single.html">Blog Post</a></li>
+                        <li><a href="">Lawyers</a></li>
+                        </ul>
+
+                        <ul class="footer-unordered-list">
+                            <li><a href="">Lawyer Single</a></li>
+                            <li><a href="../src/cases.html">Case Results</a></li>
+                            <li><a href="../src/practice-areas.html">Practice Areas</a></li>
+                            <li><a href="">Packages</a></li>
+                            <li><a href="">Package Single</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div style="width: clamp(100px,9.2vw,146px)">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.4vw,22px); color: 
+                    #FFFFFF; padding-top: clamp(10px,1.1vw,18px); padding-bottom: clamp(16px,1.5vw,25px); border-block: 1px solid #3A4553;">Utility Page</h2>
+
+                    <div style="padding-top: clamp(16px,1.5vw,25px); display: flex; gap: clamp(20px,2.3vw,37px);">
+                        <ul class="footer-unordered-list">
+                        <li><a href="">Start Here</a></li>
+                        <li><a href="">Style Guide</a></li>
+                        <li><a href="../src/404.html">404 Not Found</a></li>
+                        <li><a href="">Password Protected</a></li>
+                        <li><a href="../src/licenses.html">Licenses</a></li>
+                        <li><a href="../src/changelog.html">Changelog</a></li>
+                        </ul>
+                    </div>   
+                    
+                </div>
+
+                <div style="width: clamp(70px,7.5vw,120px)">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.4vw,22px); color: 
+                    #FFFFFF; padding-top: clamp(10px,1.1vw,18px); padding-bottom: clamp(16px,1.5vw,25px); border-block: 1px solid #3A4553; white-space: nowrap;">Practice Area</h2>
+
+                    <div style="padding-top: clamp(16px,1.5vw,25px); display: flex; gap: clamp(20px,2.3vw,37px);">
+                        <ul class="footer-unordered-list">
+                        <li><a href="">Family Law</a></li>
+                        <li><a href="">Criminal Law</a></li>
+                        <li><a href=""> Parsonal Injury</a></li>
+                        <li><a href="">Real Estate Law </a></li>
+                        <li><a href="../src/business-law.html">Business Law</a></li>
+                        </ul>
+                    </div>   
+                    
+                </div>
+
+                <div style="width: clamp(160px,15.3vw,245px)">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.4vw,22px); color: 
+                    #FFFFFF; padding-top: clamp(10px,1.1vw,18px); padding-bottom: clamp(16px,1.5vw,25px); border-block: 1px solid #3A4553;">Contact Us</h2>
+
+                    <div style="padding-top: clamp(16px,1.5vw,25px); display: flex; gap: clamp(20px,2.3vw,37px);">
+                        <ul class="footer-unordered-list">
+                            <li><a href="">Head Office Address 121 King Street, Melbourne West,Australia</a></li>
+                            <li><a href="">&nbsp;</a></li>
+                            <li><a href="">Phone: (011) 9876 54321</a></li>
+                            <li><a href="">Email: info@example.com</a></li>
+                        </ul>
+                    </div>   
+                    
+                </div>
+
+
+            </section> 
+            
+            <!-- LAST FOOTER DOWN WITH COPYRIGHT -->
+
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #3A4553; flex-wrap: wrap;     padding-block: clamp(4px,0.5vw,8px);">
+                <p style=" font-family: 'Outfit'; font-weight: 400; font-size: clamp(8px,0.9vw,15px); color:
+                #D7D7D7; text-align: center; padding-block: 10px;">Copyright 
+                &copy; <span style="color: #D1B06B;">Attorney Law</span> | Designed by <span style="color: #D1B06B;">VictorFlow</span> Templates - Powered by Webflow
+               </p>
+
+               <div style="display: flex; justify-content: center; align-items: center;">
+                <p style="color: #D1B06B;" class="follow-paragraph">Follow:</p>
+                <div>  
+                    <div class="social-icons-1">
+                        <img src="../images/Footer-instagram.png" alt="">
+                        <img src="../images/Footer-Facebook.png" alt="">
+                        <img src="../images/Footer-Twitter.png" alt="">
+                        <img src="../images/Footer-Pinterest.png" alt="">
+                   </div>
+               </div>
+            </div>        
+        
+           </div>
+        </div>   
+
+    </section>
+
+    <script>
+
+        const pageDropDown = document.querySelector(".page-and-drop-down");
+
+        console.log("This hamburger has been clicked!");
+
+        const dropDown = document.querySelector(".dropdown-menu");
+
+        const list = document.querySelector(".nav-list");
+        const burger = document.querySelector(".hamburger-icon");
+
+
+        burger.addEventListener("click", () => {
+        list.classList.toggle("active");
+        pageDropDown.style.display = "none";
+        // blogger.style.display = "flex"
+      
+      })
+
+        // function mouseOver() {
+        //     document.querySelector(".page-and-drop-down").style.display = "block";
+        // }
+        
+        // function mouseOut() {
+        //     document.querySelector(".page-and-drop-down").style.display = "none";
+        // }
+    </script>
+
+   
+</body>
+</html>
