@@ -63,7 +63,7 @@
 
                             <div style="position: absolute; clip-path: polygon(50% 0, 100% 100%, 0 100%); z-index: 2; width: 20px; height: 20px; transform: translateY(0%); background-color: #D1B06B;" class="dropdown-menu"></div>
 
-                            <div class="dropdown-menu" style="position: absolute; z-index: 1;left: -50%; top: 140%;">
+                            <div class="dropdown-menu1" style="position: absolute; z-index: 1;left: -50%; top: 140%;">
                                 <ul style="width: 150px; list-style-type: none; vertical-align: middle; background-color: #D1B06B; display: flex; gap: 30px; flex-direction: column; color: #fff; justify-content: center; align-items: center; gap: clamp(8px,0.6vw,10px); padding-block: clamp(10px,0.9vw,14px); position: relative;">
 
 
@@ -101,8 +101,8 @@
                             </div>
     
                             <div>
-                                <h4 style="font-family: Outfit; font-size: clamp(10px,0.9vw,14px); color: #CCAA60">Call us on</h4>
-                                <p style="font-family: Outfit; font-size: clamp(13px,1vw,16.5px); color: white">911-987654321</p>
+                                <h4 style="font-family: 'Outfit'; font-size: clamp(10px,0.9vw,14px); color: #CCAA60">Call us on</h4>
+                                <p style="font-family: 'Outfit'; font-size: clamp(13px,1vw,16.5px); color: white">911-987654321</p>
                             </div>
                         </div>
     
@@ -112,8 +112,8 @@
                             </div>
     
                             <div>
-                                <h4 style="font-family: Outfit; font-size: clamp(10px,0.9vw,14px); color: #CCAA60">Email us:</h4>
-                                <p style="font-family: Outfit; font-size: clamp(13px,1vw,16.5px); color: white">yourmail@mail.com</p>
+                                <h4 style="font-family: 'Outfit'; font-size: clamp(10px,0.9vw,14px); color: #CCAA60">Email us:</h4>
+                                <p style="font-family: 'Outfit'; font-size: clamp(13px,1vw,16.5px); color: white">yourmail@mail.com</p>
                             </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
     
-                <div style="padding-top: clamp(40px,4.7vw,75px); display: flex; flex-wrap: wrap; gap: clamp(14px,1.6vw,26px);  justify-content: center">
+                <div style="padding-top: clamp(40px,4.7vw,75px); display: flex; flex-wrap: wrap; gap: clamp(14px,1.6vw,26px);  justify-content: center" class="six-divs-blog">
     
                     <div style="display: flex; flex-direction: column;gap: clamp(18px,1.7vw,27px); width: 100%; padding-bottom: clamp(36px,4vw,63px); width: clamp(260px,22.7vw,417px);">
                         <img src="../images/Section-10-blog-1.png" alt="" style="width: clamp(260px,23vw,417px); height: clamp(160px,15.6vw,250px);">
@@ -239,7 +239,7 @@
 
         <!-- Meet The Partners -->
 
-        <section style="padding-top: clamp(30px,6vw,90px); padding-bottom: clamp(36px,7.3vw,90px);">
+        <section style="padding-top: clamp(30px,6vw,90px); padding-bottom: clamp(36px,7.3vw,90px); background-color: white !important;">
             <div style="display: flex; justify-content: center; gap: clamp(15px,1.3vw,21px); padding-bottom: clamp(16px,2.5vw,40px);">
                 <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(40px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.2vw,35px);">
 
@@ -385,19 +385,49 @@
 
         <script>
 
-            const pageDropDown = document.querySelector(".page-and-drop-down");
-    
+        
+
+        
+
             console.log("This hamburger has been clicked!");
     
-            const dropDown = document.querySelector(".dropdown-menu");
     
             const list = document.querySelector(".nav-list");
             const burger = document.querySelector(".hamburger-icon");
     
+                        
+            const dropDownMenu = document.querySelector(".dropdown-menu1");
+            const dropDownMenuFirst = document.querySelector(".dropdown-menu");
+    
+            const pageDropDown = document.querySelector(".page-and-drop-down");
+    
+            let isDropdownVisible = false;
+    
+            pageDropDown.addEventListener("click", (event) => {
+            // Check if the clicked element is a link inside the dropdown menu
+            const isLinkClicked = event.target.closest('.dropdown-menu1 a');
+            
+            if (!isLinkClicked) {
+                event.preventDefault(); // Prevent default form submission or link behavior
+            }
+    
+            if (!isDropdownVisible) {
+                dropDownMenu.style.display = "flex";
+                dropDownMenuFirst.style.display = "flex";
+    
+                isDropdownVisible = true;
+            } else {
+                dropDownMenu.style.display = "none";
+                dropDownMenuFirst.style.display = "none";
+                isDropdownVisible = false;
+            }
+            });
+    
     
             burger.addEventListener("click", () => {
             list.classList.toggle("active");
-            pageDropDown.style.display = "none";
+        
+            // pageDropDown.style.display = "none";
             // blogger.style.display = "flex"
           
           })

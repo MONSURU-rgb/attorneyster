@@ -9,6 +9,7 @@ body {
     font-family: "Luxurious Script", 'Outfit', 'Cormorant Garamond', sans-serif;
     max-width: 1560px !important;
     margin-inline: auto !important;
+    background-color: #1F2732 !important;
 }
 
 
@@ -327,14 +328,19 @@ body {
 }
 
 
-.dropdown-menu {
+.dropdown-menu, .dropdown-menu1 {
     display: none;
 }
 
-.page-and-drop-down:hover > .dropdown-menu,
+.dropdown-menu1.active {
+    display: block !important;
+}
+
+
+/* .page-and-drop-down:hover > .dropdown-menu,
 .dropdown-menu.show {
   display: block !important;
-} 
+}  */
 
 /* CONTACT PAGE */
 
@@ -436,6 +442,18 @@ body {
     
 }
 
+
+
+@media screen and (min-width: 1440px) {
+    .six-divs-blog {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .six-divs-blog div {
+        max-width: 355px !important;
+    }
+}
 
 @media screen and (max-width: 1040px) {
     .flexed-contact-address {
