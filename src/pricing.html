@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../team/output.css">
+        <link rel="stylesheet" href="../dist/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Script&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Script&family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <title>Pricing</title>
+    </head>
+    <body class="max-w-[1920px]" style="overflow-x: hidden; background-color: #1F2732;">
+        <!-- HEAD SECTION -->
+      <section class="secoond-section practice w-[73%] mx-[auto]">
+        <section class="absolute-color"></section>
+        
+            <!-- FIRST NAV SECTION -->
+           <div class="mx-[auto] header-div section-1" style="z-index: 100; position: relative;">
+                <nav class="flex justify-between items-center logo-1">
+                    <div class="right-hand-logo">
+                        <img src="../images/Logo Icon.png" alt="Icon" class="logo-image"/>
+                        <h2 class="font-caramount font-semibold text-white">Attorneyster</h2>
+                    </div>
+                    <div class="right-side-header">
+                        <div class="right-side-header-div">
+                            <img src="../images/Cart-Icon.png" class="" alt="">
+                            <p class="cart">Cart (0)</p>
+                        </div>
+                        <button class="consult-button"><a href="../src/pricing.html">Book a Consultation</a></button>
+    
+                    </div>
+                </nav>
+    
+                <nav class="logo-2" style="display:flex; justify-content: space-between; padding-bottom: clamp(12px,1.5vw,24px);">
+                    <div class="hamburger-icon">
+                        <span class="line"></span>
+                    </div>
+    
+                    <ul class="nav-list list">
+                        <li><a href="../src/index.html">Home</a></li>
+                        <li><a href="../src/about.html">About Us</a></li>
+
+                        <ul class="footer-unordered-list-1">
+                            <li><a href="/src/index.html">Home</a></li>
+                            <li><a href="/src/about.html"> About Us</a></li>
+                            <li><a href="../src/blog-page.html">Blog</a></li>
+                            <li><a href="../src/blog-single.html">Blog Post</a></li>
+                            <li><a href="/src/contact.html">Contact Us</a></li>
+                        </ul>
+
+
+                        <li style="position: relative;" class="page-and-drop-down">
+                            <a href=""  class="pages">Pages
+                            <img src="../images/drop-down-icon.png" alt="">
+                            </a>
+
+                            <div style="position: absolute; clip-path: polygon(50% 0, 100% 100%, 0 100%); z-index: 2; width: 20px; height: 20px; transform: translateY(0%); background-color: #D1B06B;" class="dropdown-menu"></div>
+
+                            <div class="dropdown-menu" style="position: absolute; z-index: 1;left: -50%; top: 140%;">
+                                <ul style="width: 150px; list-style-type: none; vertical-align: middle; background-color: #D1B06B; display: flex; gap: 30px; flex-direction: column; color: #fff; justify-content: center; align-items: center; gap: clamp(8px,0.6vw,10px); padding-block: clamp(10px,0.9vw,14px); position: relative;">
+
+
+                                    <li style="list-style-type: none;" style="margin: 0;">
+                                        <a href="../src/practice-areas.html" style="text-decoration: none"><span style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px"> Practice Areas</span></a>
+                                    </li>
+                                    <li style="margin: 0;">
+                                        <a href="../src/blog-page.html" style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Blog</span></a>
+                                    </li>
+                                    <li style="margin: 0;">
+                                        <a href="../src/blog-single.html" aria-current="page" style="text-decoration: none"><span style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Blog Single</span></a>
+                                    </li>
+                                    <li style="margin: 0;">
+                                        <a href="../src/cases.html" style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Successful Cases</span></a>
+                                    </li>
+
+                                    <li style="margin: 0;">
+                                        <a href="../src/testimonial.html" style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Testimonial</span></a>
+                                    </li>
+
+                                    <li style="margin: 0;">
+                                        <a href="../src/business-law.html" style="font-family: 'Outfit'; color: #1F2732; font-weight: 400; letter-spacing: 1px; font-size: clamp(12px,0.9vw,15px); padding-top: 5px">Business Law</span></a>
+                                    </li>
+                
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="../src/contact.html">Contact Us</a></li>
+                    </ul>
+    
+                    <div style="display: flex; gap: clamp(22px,2.3vw,34.5px)">
+                        <div style="display: flex; gap: clamp(3px,0.5vw,8px);">
+                            <div class="tel-icon">
+                                <img src="../images/telephone.png" alt="" style="width: clamp(5px,0.8vw,13px); text-align: center; height: clamp(5px,0.8vw,13px)">
+                            </div>
+    
+                            <div>
+                                <h4 style="font-family: Outfit; font-size: clamp(10px,0.9vw,14px); color: #CCAA60">Call us on</h4>
+                                <p style="font-family: Outfit; font-size: clamp(13px,1vw,16.5px); color: white">911-987654321</p>
+                            </div>
+                        </div>
+    
+                        <div class="email-message">
+                            <div class="tel-icon">
+                                <img src="../images/email.png" alt="" style="width: clamp(5px,0.8vw,13px); text-align: center; height: clamp(5px,0.8vw,13px)">
+                            </div>
+    
+                            <div>
+                                <h4 style="font-family: Outfit; font-size: clamp(10px,0.9vw,14px); color: #CCAA60">Email us:</h4>
+                                <p style="font-family: Outfit; font-size: clamp(13px,1vw,16.5px); color: white">yourmail@mail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+           </div>
+    
+           <div style="padding-top: clamp(10px,4.1vw,66px); display: flex; justify-content: center; align-items: center;  padding-bottom: clamp(45px,7vw,112px); flex-direction: column; z-index: 1; position: relative;">
+             <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(28px,3.1vw,48.8px); color: #FFFFFF; padding-bottom: clamp(10px,0.97vw,16px); max-width: clamp(200px,21vw,335px); text-align: center;">Pricing</h2>
+    
+             <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px);">
+           </div>
+    
+      </section> 
+
+      <!-- SECOND SECTION  -->
+
+      <section>
+            <div class="section-2 licenses-section-2;" style="padding-block: clamp(20px,7.2vw,120px); display: flex; flex-direction: column;">
+
+                <div style="background-image: url(../images/Pricing-page-image-1.png); width: 100%; height: clamp(100px,19vw,300px); background-size: cover; display: flex; padding-left: clamp(12px,2vw,32px);align-items: center;">
+
+                    <div>
+                        <img src="../images/Pricing-price-icon.png" alt="" style="width: clamp(35px,4.1vw,65px)">
+                        <h2 style="font-family: 'Cormorant Garamond'; font-size: clamp(28px,3.1vw,49px); font-weight: 700; color: #1F2732;">No Fee Guarantee®</h2>
+                        <p style="font-family: 'Outfit'; font-size: clamp(12px,1.1vw,17px); color: #1F2732; max-width: clamp(250px,41vw,620px); font-weight: 600;">We’ll win your injury case, or it’s free.</p>
+                    </div>
+                
+                </div>
+
+                <div style="padding-top: clamp(10px,1.8vw,30px); display: flex; justify-content: center; align-items: center;  padding-bottom: clamp(10px,1.8vw,30px); flex-direction: column; z-index: 1; position: relative;">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(28px,2.1vw,34px); color: #FFFFFF; padding-bottom: clamp(10px,0.97vw,16px); max-width: clamp(200px,21vw,335px); text-align: center;">Plan For Justice</h2>
+           
+                    <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px);">
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: clamp(10px,1.8vw,30px); flex-wrap: wrap;">
+
+                    <section style=" width: clamp(200px,21vw,336px); background-color: #161D27; padding-block: clamp(10px,1.2vw,20px);">
+
+                        <div style="padding-bottom: clamp(10px,1.3vw,20px); border-bottom: 1px solid #3A4553; text-align: center; width: 100% !important;">
+                            <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(28px,2.1vw,34px); color: #FFFFFF;">Single Plan</h2>
+                            <p style="font-family: Outfit; font-size: clamp(12px,0.9vw,15px); color: #D1B06B;">For single person</p>
+                        </div>
+                        <div style="padding-inline: clamp(18px,2.2vw,35px); padding-block: clamp(10px,1.2vw,19px);">
+
+                            <div style="padding-bottom: clamp(10px,1.3vw,20px); border-bottom: 1px solid #3A4553; text-align: center; display: flex; align-items: center; flex-direction: column;">
+                                <h2 style="font-family: 'Outfit'; font-weight: 700; font-size: clamp(28px,2.1vw,34px); color: 
+                                #D1B06B;">$8.00</h2>
+                                <p style="font-family: Outfit; font-size: clamp(12px,0.9vw,15px); color: white; padding-inline: clamp(3px,0.6vw,10px); padding-block: clamp(3px,0.3vw,6px); background-color: #1F2732; width: clamp(30px,6.1vw,98px);">Per Case</p>
+                            </div>
+
+                            <div style="display: flex; flex-direction: column; font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #D7D7D7; font-weight: 400; justify-content: center; align-items: center;">
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Serious car crash</p>
+
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Truck accidents</p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Semi-truck collision</p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">-</p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553;width: 100%; text-align: center; margin-bottom: clamp(14px,2vw,32px);">-</p>
+                                    
+                            </div>
+
+                            <button style="width: 100%; height: clamp(30px,4vw,64px); font-family: 'Outfit'; font-size: clamp(12px,1.1vw,17px); color: white; font-weight: 500; background-color: #161D27; border: 1px solid #D1B06B;">Get Started</button>
+                        </div>
+
+                    </section>
+
+                    <section style=" width: clamp(200px,21vw,336px); background-color: #161D27; padding-block: clamp(10px,1.2vw,20px);">
+
+                        <div style="padding-bottom: clamp(10px,1.3vw,20px); border-bottom: 1px solid #3A4553; text-align: center; width: 100% !important;">
+                            <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(28px,2.1vw,34px); color: #FFFFFF;">Group Plan</h2>
+                            <p style="font-family: Outfit; font-size: clamp(12px,0.9vw,15px); color: #D1B06B;">For group of peoples</p>
+                        </div>
+                        <div style="padding-inline: clamp(18px,2.2vw,35px); padding-block: clamp(10px,1.2vw,19px);">
+
+                            <div style="padding-bottom: clamp(10px,1.3vw,20px); border-bottom: 1px solid #3A4553; text-align: center; display: flex; align-items: center; flex-direction: column;">
+                                <h2 style="font-family: 'Outfit'; font-weight: 700; font-size: clamp(28px,2.1vw,34px); color: 
+                                #D1B06B;">$16.00</h2>
+                                <p style="font-family: Outfit; font-size: clamp(12px,0.9vw,15px); color: white; padding-inline: clamp(3px,0.6vw,10px); padding-block: clamp(3px,0.3vw,6px); background-color: #1F2732; width: clamp(30px,6.1vw,98px);">Per Case</p>
+                            </div>
+
+                            <div style="display: flex; flex-direction: column; font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #D7D7D7; font-weight: 400; justify-content: center; align-items: center;">
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Serious car crash</p>
+
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Truck accidents</p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Semi-truck collision</p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;"> Motorcycle accidents</p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553;width: 100%; text-align: center; margin-bottom: clamp(14px,2vw,32px);">-</p>
+                                    
+                            </div>
+
+                            <button style="width: 100%; height: clamp(30px,4vw,64px); font-family: 'Outfit'; font-size: clamp(12px,1.1vw,17px); color: #1F2732; font-weight: 500; background-color: #D1B06B; border: 1px solid #D1B06B;">Get Started</button>
+                        </div>
+
+                    </section>
+
+                    <section style=" width: clamp(200px,21vw,336px); background-color: #161D27; padding-block: clamp(10px,1.2vw,20px);">
+
+                        <div style="padding-bottom: clamp(10px,1.3vw,20px); border-bottom: 1px solid #3A4553; text-align: center; width: 100% !important;">
+                            <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(28px,2.1vw,34px); color: #FFFFFF;">Business Plan</h2>
+                            <p style="font-family: Outfit; font-size: clamp(12px,0.9vw,15px); color: #D1B06B;">For business industry</p>
+                        </div>
+                        <div style="padding-inline: clamp(18px,2.2vw,35px); padding-block: clamp(10px,1.2vw,19px);">
+
+                            <div style="padding-bottom: clamp(10px,1.3vw,20px); border-bottom: 1px solid #3A4553; text-align: center; display: flex; align-items: center; flex-direction: column;">
+                                <h2 style="font-family: 'Outfit'; font-weight: 700; font-size: clamp(28px,2.1vw,34px); color: 
+                                #D1B06B;">$26.00</h2>
+                                <p style="font-family: Outfit; font-size: clamp(12px,0.9vw,15px); color: white; padding-inline: clamp(3px,0.6vw,10px); padding-block: clamp(3px,0.3vw,6px); background-color: #1F2732; width: clamp(30px,6.1vw,98px);">Per Case</p>
+                            </div>
+
+                            <div style="display: flex; flex-direction: column; font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #D7D7D7; font-weight: 400; justify-content: center; align-items: center;">
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Serious car crash</p>
+
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Truck accidents</p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;">Semi-truck collision</p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553; width: 100%; text-align: center;"> Motorcycle accidents </p>
+                                    
+                                <p style="padding-block: clamp(6px,0.7vw,12px); border-bottom: 1px solid #3A4553;width: 100%; text-align: center; margin-bottom: clamp(14px,2vw,32px);">Wrongfull Death</p>
+                                    
+                            </div>
+
+                            <button style="width: 100%; height: clamp(30px,4vw,64px); font-family: 'Outfit'; font-size: clamp(12px,1.1vw,17px); color: white; font-weight: 500; background-color: #161D27; border: 1px solid #D1B06B;">Get Started</button>
+                        </div>
+
+                    </section>
+                </div>
+                
+            </div>
+      </section> 
+      
+      <!-- THIRD SECTION -->
+
+      <section style="background-color: white;">
+        <div class="section-3" style="display: flex; justify-content: center; flex-direction: column; padding-block: clamp(40px,7.5vw,120px); align-items: center; margin-inline: auto;">
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: clamp(20px,3vw,50px);">
+                <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #161D27; text-align: center;">FAQ Simple</h2>
+                <img src="../images/Section-4-icon-1.svg" alt="" style="width: clamp(50px,4.2vw,67px); height: clamp(24px,2.1vw,33px); margin-bottom: clamp(20px,2.2vw,35px);">
+            </div>
+
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: clamp(20px,6vw,70px); row-gap: clamp(20px,2.5vw,35px); padding-inline: clamp(18px,3vw,40px); padding-bottom: clamp(20px,3.8vw,60px);" class="faq-six-questions">
+
+                <div style="max-width: clamp(250px,30vw,470px); padding-bottom: clamp(20px,2vw,32px); border-bottom: 1px solid #C5C5C5;">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #1F2732;">What types of cases does your law firm handle?</h2>
+
+                    <p style="font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #909090; font-weight: 400;">At Attorney Law Firm we handle claims at all levels of litigation. Our areas of practice include Business Law, Employment and Labor Law, Intellectual Property/Technology Transactions, and Litigation another attorney may perform certain duties within the case itself.</p>
+                </div>
+                <div style="max-width: clamp(250px,29.5vw,450px); padding-bottom: clamp(20px,2vw,32px); border-bottom: 1px solid #C5C5C5;">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #1F2732; max-width: clamp(250px,28vw,440px) ">How will I know which attorney in the group is best for me?</h2>
+
+                    <p style="font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #909090; font-weight: 400;">Our leadership team at the Thurman Law firm will determine which attorney can best represent you in handling your case. It may not be possible, or advantageous, to have one attorney handle all of your legal matters of the case, but from time to time.</p>
+                </div>
+
+                <div style="max-width: clamp(250px,28.2vw,460px); padding-bottom: clamp(20px,2vw,32px); border-bottom: 1px solid #C5C5C5;">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #1F2732;">How can I avoid being sued if a claim is made against me?</h2>
+
+                    <p style="font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #909090; font-weight: 400;">No one can stop a lawsuit from being filed. However, if there is a legitimate dispute that arises and a claim made against you, consult a lawyer behind-the-scenes work is being completed so that on the day your matter is ready, nothing will be overlooked.</p>
+                </div>
+
+                <div style="max-width: clamp(250px,28.2vw,470px); padding-bottom: clamp(20px,2vw,32px); border-bottom: 1px solid #C5C5C5;">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #1F2732;">What is the difference between divorce and legal separation?</h2>
+
+                    <p style="font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #909090; font-weight: 400;">In addition to ending your marriage, a divorce addresses all issues within the marriage, including property, finances, and child-related issues. This is the most common way to deal with marital issues, as Florida does not recognize legal separation.</p>
+                </div>
+
+                <div style="max-width: clamp(250px,28.6vw,470px); padding-bottom: clamp(20px,2vw,32px); border-bottom: 1px solid #C5C5C5;">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #1F2732;">Why should I have a lawyer representing me during divorce?</h2>
+
+                    <p style="font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #909090; font-weight: 400;">While many individuals proceed through the divorce process, having the help of an attorney with family law experience can go a long way toward protecting your interests. Florida’s family laws have developed over many decades and are complicated.</p>
+                </div>
+
+                <div style="max-width: clamp(250px,28vw,470px); padding-bottom: clamp(20px,2vw,32px); border-bottom: 1px solid #C5C5C5;">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #1F2732;">Do I need an attorney to start a business?</h2>
+
+                    <p style="font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #909090; font-weight: 400;">There are certain matters that are fairly straightforward or not unduly difficult to learn and, therefore, do not require the services of an attorney, like writing a business plan, researching and picking a name for your business or reserving a domain.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+                <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(20px,2.1vw,33.8px); color: #161D27; text-align: center;">Get a Free Consultation</h2>
+                <p style="font-family: 'Outfit'; font-size: clamp(12px,0.9vw,15px); color: #909090; font-weight: 400; max-width: clamp(200px,22vw,371px); text-align: center; padding-bottom: clamp(10px,1.9vw,30px);">There are  of Lorem Ipsum available, but the majority by injected humour  which don't look even.</p>
+
+                <button style="padding-inline: clamp(30px,4vw,60px); padding-block: clamp(12px,1.3vw,20px); background-color: #D1B06B;  font-family: 'Outfit'; font-weight: 500; font-size: clamp(10px,1.1vw,17px);"><a href="../src/contact.html">Contact Us</a></button>
+
+            </div>
+            
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+
+      <section style="background-color: #1F2732;">
+        <div style="margin-inline: auto; padding-block: clamp(40px,6.5vw,104px);" class="section-12">
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: clamp(18px,2.1vw,34px); padding-bottom: clamp(30px,4.3vw,68px);">
+                <img src="../images/Section-12-left-hand-side-plus-icon.png" alt="" style="max-width: clamp(140px,40vw,390px); height: clamp(20px,2.5vw,38px);" class="section-12-plus-icon">
+
+                <div style="display: flex; gap: clamp(4px,0.6vw,9px); align-items: center; margin-left: clamp(-5px,-1.4vw,-20px);">
+                    <img src="../images/Section-12-Attorneystar-icon.png" alt="" style="width: clamp(26px,2.6vw,42px); height: clamp(30px,3.7vw,58.5px);">
+
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 600; font-size: clamp(26px,3.1vw,48.8px); color: 
+                    #FFFFFF;">Attorneyster</h2>
+                </div>
+
+                <img src="../images/Section-12-right-hand-plus-icon.png" alt="" style="max-width: clamp(140px,40vw,390px); height: clamp(20px,2.4vw,38px);" class="section-12-plus-icon">
+            </div>
+
+            <section style="display: flex; gap: clamp(30px,6.7vw,107px); justify-content: space-between; padding-bottom: clamp(30px,4.3vw,68px); border-bottom: 1px solid #3A4553; flex-wrap: wrap;">
+
+                <div style="width: clamp(160px,13.6vw,218px)">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.4vw,22px); color: 
+                    #FFFFFF; padding-top: clamp(10px,1.1vw,18px); padding-bottom: clamp(16px,1.5vw,25px); border-block: 1px solid #3A4553;">Quick Link</h2>
+
+                    <div style="padding-top: clamp(16px,1.5vw,25px); display: flex; gap: clamp(20px,2.3vw,37px);">
+                        <ul class="footer-unordered-list">
+                        <li><a href="../src/index.html">Home</a></li>
+                        <li><a href="../src/about.html">About</a></li>
+                        <li><a href="../src/contact.html">Contact</a></li>
+                        <li><a href="../src/blog-page.html">Blog</a></li>
+                        <li><a href="../src/blog-single.html">Blog Post</a></li>
+                        <li><a href="">Lawyers</a></li>
+                        </ul>
+
+                        <ul class="footer-unordered-list">
+                            <li><a href="">Lawyer Single</a></li>
+                            <li><a href="../src/cases.html">Case Results</a></li>
+                            <li><a href="../src/practice-areas.html">Practice Areas</a></li>
+                            <li><a href="">Packages</a></li>
+                            <li><a href="">Package Single</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div style="width: clamp(100px,9.2vw,146px)">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.4vw,22px); color: 
+                    #FFFFFF; padding-top: clamp(10px,1.1vw,18px); padding-bottom: clamp(16px,1.5vw,25px); border-block: 1px solid #3A4553;">Utility Page</h2>
+
+                    <div style="padding-top: clamp(16px,1.5vw,25px); display: flex; gap: clamp(20px,2.3vw,37px);">
+                        <ul class="footer-unordered-list">
+                        <li><a href="">Start Here</a></li>
+                        <li><a href="">Style Guide</a></li>
+                        <li><a href="../src/404.html">404 Not Found</a></li>
+                        <li><a href="">Password Protected</a></li>
+                        <li><a href="../src/licenses.html">Licenses</a></li>
+                        <li><a href="../src/changelog.html">Changelog</a></li>
+                        </ul>
+                    </div>   
+                    
+                </div>
+
+                <div style="width: clamp(70px,7.5vw,120px)">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.4vw,22px); color: 
+                    #FFFFFF; padding-top: clamp(10px,1.1vw,18px); padding-bottom: clamp(16px,1.5vw,25px); border-block: 1px solid #3A4553; white-space: nowrap;">Practice Area</h2>
+
+                    <div style="padding-top: clamp(16px,1.5vw,25px); display: flex; gap: clamp(20px,2.3vw,37px);">
+                        <ul class="footer-unordered-list">
+                        <li><a href="">Family Law</a></li>
+                        <li><a href="">Criminal Law</a></li>
+                        <li><a href=""> Parsonal Injury</a></li>
+                        <li><a href="">Real Estate Law </a></li>
+                        <li><a href="../src/business-law.html">Business Law</a></li>
+                        </ul>
+                    </div>   
+                    
+                </div>
+
+                <div style="width: clamp(160px,15.3vw,245px)">
+                    <h2 style="font-family: 'Cormorant Garamond'; font-weight: 700; font-size: clamp(14px,1.4vw,22px); color: 
+                    #FFFFFF; padding-top: clamp(10px,1.1vw,18px); padding-bottom: clamp(16px,1.5vw,25px); border-block: 1px solid #3A4553;">Contact Us</h2>
+
+                    <div style="padding-top: clamp(16px,1.5vw,25px); display: flex; gap: clamp(20px,2.3vw,37px);">
+                        <ul class="footer-unordered-list">
+                            <li><a href="">Head Office Address 121 King Street, Melbourne West,Australia</a></li>
+                            <li><a href="">&nbsp;</a></li>
+                            <li><a href="">Phone: (011) 9876 54321</a></li>
+                            <li><a href="">Email: info@example.com</a></li>
+                        </ul>
+                    </div>   
+                    
+                </div>
+
+
+            </section> 
+            
+            <!-- LAST FOOTER DOWN WITH COPYRIGHT -->
+
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #3A4553; flex-wrap: wrap;     padding-block: clamp(4px,0.5vw,8px);">
+                <p style=" font-family: 'Outfit'; font-weight: 400; font-size: clamp(8px,0.9vw,15px); color:
+                #D7D7D7; text-align: center; padding-block: 10px;">Copyright 
+                &copy; <span style="color: #D1B06B;">Attorney Law</span> | Designed by <span style="color: #D1B06B;">VictorFlow</span> Templates - Powered by Webflow
+               </p>
+
+               <div style="display: flex; justify-content: center; align-items: center;">
+                <p style="color: #D1B06B;" class="follow-paragraph">Follow:</p>
+                <div>  
+                    <div class="social-icons-1">
+                        <img src="../images/Footer-instagram.png" alt="">
+                        <img src="../images/Footer-Facebook.png" alt="">
+                        <img src="../images/Footer-Twitter.png" alt="">
+                        <img src="../images/Footer-Pinterest.png" alt="">
+                   </div>
+               </div>
+            </div>        
+        
+           </div>
+        </div>   
+
+    </section>
+
+    <script>
+
+        const pageDropDown = document.querySelector(".page-and-drop-down");
+
+        console.log("This hamburger has been clicked!");
+
+        const dropDown = document.querySelector(".dropdown-menu");
+
+        const list = document.querySelector(".nav-list");
+        const burger = document.querySelector(".hamburger-icon");
+
+
+        burger.addEventListener("click", () => {
+        list.classList.toggle("active");
+        pageDropDown.style.display = "none";
+        // blogger.style.display = "flex"
+      
+      })
+
+        // function mouseOver() {
+        //     document.querySelector(".page-and-drop-down").style.display = "block";
+        // }
+        
+        // function mouseOut() {
+        //     document.querySelector(".page-and-drop-down").style.display = "none";
+        // }
+    </script>
+    
+</body>
+</html>
