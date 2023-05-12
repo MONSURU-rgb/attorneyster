@@ -963,36 +963,30 @@
     </section>
 
     <script>
-
-        
-
-        
-
         console.log("This hamburger has been clicked!");
-
 
         const list = document.querySelector(".nav-list");
         const burger = document.querySelector(".hamburger-icon");
-
-                    
         const dropDownMenu = document.querySelector(".dropdown-menu1");
         const dropDownMenuFirst = document.querySelector(".dropdown-menu");
-
         const pageDropDown = document.querySelector(".page-and-drop-down");
-
         let isDropdownVisible = false;
+        const body = document.querySelector("body");
 
-        pageDropDown.addEventListener("click", (event) => {
-        // Check if the clicked element is a link inside the dropdown menu
-        const isLinkClicked = event.target.closest('.dropdown-menu1 a');
-        
-        if (!isLinkClicked) {
-            event.preventDefault(); // Prevent default form submission or link behavior
-        }
+            pageDropDown.addEventListener("click", (event) => {
+            // Check if the clicked element is a link inside the dropdown menu
+            const isLinkClicked = event.target.closest(".dropdown-menu1 a");
 
-        if (!isDropdownVisible) {
-            dropDownMenu.style.display = "flex";
-            dropDownMenuFirst.style.display = "flex";
+            if (!isLinkClicked) {
+                event.preventDefault(); // Prevent default form submission or link behavior
+            }
+
+            if (!isDropdownVisible) {
+                dropDownMenu.style.display = "flex";
+                dropDownMenuFirst.style.display = "flex";
+
+          // Stop the propagation of the click event
+            event.stopPropagation();
 
             isDropdownVisible = true;
         } else {
@@ -1002,22 +996,17 @@
         }
         });
 
+        // Close the dropdown when clicking anywhere on the body
+        body.addEventListener("click", () => {
+        dropDownMenu.style.display = "none";
+        dropDownMenuFirst.style.display = "none";
+        isDropdownVisible = false;
+        });
 
         burger.addEventListener("click", () => {
         list.classList.toggle("active");
-    
-        // pageDropDown.style.display = "none";
-        // blogger.style.display = "flex"
-      
-      })
+        });
 
-        // function mouseOver() {
-        //     document.querySelector(".page-and-drop-down").style.display = "block";
-        // }
-        
-        // function mouseOut() {
-        //     document.querySelector(".page-and-drop-down").style.display = "none";
-        // }
     </script>
 
    
