@@ -729,8 +729,18 @@ body {
         display: flex;
     }
 
+    .page-and-drop-down {
+        display: none !important;
+    }
 
 
+
+}
+
+@media screen and (max-width: 482px) {
+    .three-sections-for-pricing-plan section {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 675px) {
